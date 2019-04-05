@@ -1,13 +1,13 @@
 {
-  "main.css": "/MyScoreboard/static/css/main.eb41a183.chunk.css",
-  "main.js": "/MyScoreboard/static/js/main.9e7624b3.chunk.js",
-  "main.js.map": "/MyScoreboard/static/js/main.9e7624b3.chunk.js.map",
+  "main.css": "/MyScoreboard/static/css/main.c8ddf562.chunk.css",
+  "main.js": "/MyScoreboard/static/js/main.7e99fa7e.chunk.js",
+  "main.js.map": "/MyScoreboard/static/js/main.7e99fa7e.chunk.js.map",
   "runtime~main.js": "/MyScoreboard/static/js/runtime~main.d9173a1c.js",
   "runtime~main.js.map": "/MyScoreboard/static/js/runtime~main.d9173a1c.js.map",
-  "static/js/2.1fe07213.chunk.js": "/MyScoreboard/static/js/2.1fe07213.chunk.js",
-  "static/js/2.1fe07213.chunk.js.map": "/MyScoreboard/static/js/2.1fe07213.chunk.js.map",
+  "static/js/2.98feb709.chunk.js": "/MyScoreboard/static/js/2.98feb709.chunk.js",
+  "static/js/2.98feb709.chunk.js.map": "/MyScoreboard/static/js/2.98feb709.chunk.js.map",
   "index.html": "/MyScoreboard/index.html",
-  "precache-manifest.4e01f5da6eaa6916acb62f51d71043ab.js": "/MyScoreboard/precache-manifest.4e01f5da6eaa6916acb62f51d71043ab.js",
+  "precache-manifest.855bd07011d636017592fcb6f29259c0.js": "/MyScoreboard/precache-manifest.855bd07011d636017592fcb6f29259c0.js",
   "service-worker.js": "/MyScoreboard/service-worker.js",
-  "static/css/main.eb41a183.chunk.css.map": "/MyScoreboard/static/css/main.eb41a183.chunk.css.map"
+  "static/css/main.c8ddf562.chunk.css.map": "/MyScoreboard/static/css/main.c8ddf562.chunk.css.map"
 }
