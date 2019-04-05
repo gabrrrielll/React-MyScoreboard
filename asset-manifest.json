@@ -1,13 +1,13 @@
 {
-  "main.css": "/MyScoreboard/static/css/main.c8ddf562.chunk.css",
-  "main.js": "/MyScoreboard/static/js/main.7e99fa7e.chunk.js",
-  "main.js.map": "/MyScoreboard/static/js/main.7e99fa7e.chunk.js.map",
-  "runtime~main.js": "/MyScoreboard/static/js/runtime~main.d9173a1c.js",
-  "runtime~main.js.map": "/MyScoreboard/static/js/runtime~main.d9173a1c.js.map",
-  "static/js/2.98feb709.chunk.js": "/MyScoreboard/static/js/2.98feb709.chunk.js",
-  "static/js/2.98feb709.chunk.js.map": "/MyScoreboard/static/js/2.98feb709.chunk.js.map",
-  "index.html": "/MyScoreboard/index.html",
-  "precache-manifest.855bd07011d636017592fcb6f29259c0.js": "/MyScoreboard/precache-manifest.855bd07011d636017592fcb6f29259c0.js",
-  "service-worker.js": "/MyScoreboard/service-worker.js",
-  "static/css/main.c8ddf562.chunk.css.map": "/MyScoreboard/static/css/main.c8ddf562.chunk.css.map"
+  "main.css": "/React-MyScoreboard/static/css/main.c8ddf562.chunk.css",
+  "main.js": "/React-MyScoreboard/static/js/main.c7a13acd.chunk.js",
+  "main.js.map": "/React-MyScoreboard/static/js/main.c7a13acd.chunk.js.map",
+  "runtime~main.js": "/React-MyScoreboard/static/js/runtime~main.5158f5cc.js",
+  "runtime~main.js.map": "/React-MyScoreboard/static/js/runtime~main.5158f5cc.js.map",
+  "static/js/2.98feb709.chunk.js": "/React-MyScoreboard/static/js/2.98feb709.chunk.js",
+  "static/js/2.98feb709.chunk.js.map": "/React-MyScoreboard/static/js/2.98feb709.chunk.js.map",
+  "index.html": "/React-MyScoreboard/index.html",
+  "precache-manifest.f5501a435fb00ee55d2d58e19b592203.js": "/React-MyScoreboard/precache-manifest.f5501a435fb00ee55d2d58e19b592203.js",
+  "service-worker.js": "/React-MyScoreboard/service-worker.js",
+  "static/css/main.c8ddf562.chunk.css.map": "/React-MyScoreboard/static/css/main.c8ddf562.chunk.css.map"
 }
