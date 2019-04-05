@@ -1,39 +1,75 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import Header from "./components/Header";
+import { PLAYERS } from "./utils/players";
+import Player from "./components/Player";
+import AddPlayerForm from "./components/AddPlayer";
 import './scoreboard.css';
-import Header from './components/Header';
-import Player from './components/Player';
 
 class App extends Component {
   state = {
-    players: [
-      {nume: "Mario", id: 0, scor: 0 },
-      {nume: "Alex", id: 1, scor: 0},
-      {nume: "Andrei", id: 2, scor: 0},
-    ]
-    
-  }
-  handleScorChange = (id, direction) => {
-    //direction = this.state.scor +1
-   const scor="11";
+    players: PLAYERS
+  };
 
-  }
+  getHighScore = () => {
+    const scores = this.state.players.map(p => p.score);
+    const highScore = Math.max(...scores);
+    if (highScore) {
+      return highScore;
+    }
+    return null;
+  };
+
+  handleChangeScore = (id, modifier) => {
+  
+    this.setState(prevState => ({
+      players: prevState.players.map(player => {
+        if (player.id !== id) {
+          return player;
+        }
+        else {
+          return Object.assign(player, { score: player.score + modifier });
+        }
+      })
+    }));
+  };
+
+  handleRemovePlayer = id => {
+    this.setState(prevState => {
+      return {
+        players: prevState.players.filter(p => p.id !== id)
+      };
+    });
+  };
+
+  handleAddPlayer = name => {
+
+    const genUniqIncrId = () => 1 + Math.max(...this.state.players.map(player => player.id));
+
+    this.setState(prevState => ({
+      players: [...prevState.players, { name, id: genUniqIncrId(), score: 0 }]
+    }));
+  };
 
   render() {
-    
-    const jucatori = this.state.players.map(element => {
-      return(
-        <Player key= {element.id.toString()} nume={element.nume} handleScorChange={this.handleScorChange} scor={element.scor}/>
-        
-
-    )})
+    const highScore = this.getHighScore();
     return (
-     
-      <div className = "scoreboard">
-     <Header titlu = "Titlul meu" totalPlayers={this.state.players.length} />
-     
-     {jucatori}
-      
-    </div>
+      <div className="scoreboard" >
+        <Header title="Scoreboard" players={this.state.players} />
+
+        {this.state.players.map(player => (
+          <Player
+            name={player.name}
+            id={player.id}
+            key={player.id.toString()}
+            removePlayer={this.handleRemovePlayer}
+            changeScore={this.handleChangeScore}
+            score={player.score}
+            isHighScore={highScore === player.score}
+          />
+        ))}
+
+        <AddPlayerForm addPlayer={this.handleAddPlayer} />
+      </div>
     );
   }
 }
